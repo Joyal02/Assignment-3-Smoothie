@@ -1,0 +1,66 @@
+
+
+/* Default theme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="range"] {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+#smoothieOutput {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Dark theme */
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Colorful theme */
+body.colorful {
+    background-color: #f7f3db;
+}
+
+body.colorful h1 {
+    color: #ff5733;
+}
+
+body.colorful label {
+    color: #009688;
+}
+
+body.colorful select {
+    background-color: #fff;
+}
+
+#smoothieImage img {
+    max-width: 200px;
+    margin: 20px auto;
+}

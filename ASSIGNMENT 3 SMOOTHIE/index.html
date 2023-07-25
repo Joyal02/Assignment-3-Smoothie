@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Build Your Smoothie</h1>
+    <div id="themeSelector">
+        <label for="theme">Select a theme:</label>
+        <select id="theme" name="theme">
+            <option value="default">Default</option>
+            <option value="dark">Dark</option>
+            <option value="colorful">Colorful</option>
+        </select>
+    </div>
+
+    <form id="smoothieForm">
+        <label for="fruit">Select a fruit:</label>
+        <select id="fruit" name="fruit">
+            <option value="banana">Banana</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="blueberry">Blueberry</option>
+            <!-- Add more fruit options -->
+        </select>
+
+        <label for="yogurt">Yogurt:</label>
+        <input type="checkbox" name="ingredient" value="yogurt" data-price="1.5">
+
+        <label for="milk">Milk:</label>
+        <input type="checkbox" name="ingredient" value="milk" data-price="1">
+
+        <label for="ice">Ice:</label>
+        <input type="checkbox" name="ingredient" value="ice" data-price="0.5">
+
+        <label for="sweetness">Sweetness level:</label>
+        <input type="range" id="sweetness" name="sweetness" min="0" max="10" value="5">
+
+        <button type="button" id="orderButton">Order</button>
+        <button type="button" id="surpriseButton">Surprise Me</button>
+    </form>
+
+    <div id="smoothieOutput">
+        <div id="smoothieImage"></div>
+        <div id="bill"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
